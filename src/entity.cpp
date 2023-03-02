@@ -1,14 +1,12 @@
 #include "entity.h"
 #include "keystate.h"
 #include "rect2.h"
-#include <iostream>
 #include <memory>
 #include <utility>
 
 Entity::Entity(std::shared_ptr<Texture2D> tex, Vector2 pos) {
     this->tex = std::move(tex);
     this->position = pos;
-
 }
 
 Entity::~Entity() {}
