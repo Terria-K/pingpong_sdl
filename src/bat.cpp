@@ -6,7 +6,6 @@
 #include "tmath.h"
 #include "vector2.h"
 #include <SDL_scancode.h>
-#include <iostream>
 #include <memory>
 
 Bat::Bat(std::shared_ptr<Texture2D> tex, Vector2 pos, SDL_Scancode up, SDL_Scancode down) : Entity(tex, pos) {

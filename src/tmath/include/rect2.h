@@ -12,12 +12,4 @@ struct Rect2 {
         this->y < rect.y + rect.h &&
         this->y + this->h > rect.y;
     }
-
-    bool contains_with_pos(Rect2<T> rect) {
-        return
-        this->x < rect.x + rect.w &&
-        this->x + this->w > rect.x &&
-        this->y < rect.y + rect.h &&
-        this->y + this->h > rect.y;
-    }
 };
