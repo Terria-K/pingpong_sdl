@@ -16,6 +16,7 @@ target_link_libraries(sdlgame PRIVATE SDL2::SDL2)
 target_link_libraries(sdlgame PRIVATE SDL2_image::SDL2_image)
 
 if (WIN32)
+    add_compile_definitions(WINDOWS)
     add_custom_command(
         TARGET sdlgame POST_BUILD
         COMMAND "${CMAKE_COMMAND}" -E copy_if_different "$<TARGET_FILE:SDL2::SDL2>" "$<TARGET_FILE_DIR:sdlgame>"
