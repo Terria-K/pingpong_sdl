@@ -1,5 +1,7 @@
 #pragma once
 
-struct Point2 {
-    int x, y;
-};
+namespace PingPong {
+    struct Point2 {
+        int x, y;
+    };
+}
